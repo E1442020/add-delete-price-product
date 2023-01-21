@@ -70,7 +70,6 @@ let removeProduct = () => {
     let removeProducts = document.querySelectorAll(".remove-product");
     removeProducts.forEach((removeButton) => {
         removeButton.addEventListener("click", () => {
-            // console.log(contactArr)
             productArr.map((productItem, index) => {
                 let stringProductId = removeButton === null || removeButton === void 0 ? void 0 : removeButton.dataset.id;
                 if (stringProductId !== undefined) {
@@ -90,9 +89,8 @@ let removeProduct = () => {
 };
 let getTotal = () => {
     let totalPrice = 0;
+    let stringTotalPrice = totalPrice.toString();
     if (productArr.length == 0) {
-        totalPrice = 0;
-        let stringTotalPrice = totalPrice.toString();
         total.innerHTML = stringTotalPrice;
     }
     else {
