@@ -18,11 +18,11 @@ let checkProductInformation = () => {
     console.log(productArr);
     if (productArr.length == 0) {
         displayProduct.style.display = "block";
-        console.log("if");
+        total.style.color = '#dc3545';
     }
     else {
         displayProduct.style.display = "none";
-        console.log("else");
+        total.style.color = '#28a745';
     }
 };
 checkProductInformation();

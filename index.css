@@ -1,11 +1,11 @@
 body {
-  background-color: hsl(8deg, 71%, 86%);
-  background-image: linear-gradient(90deg, hsl(8deg, 71%, 86%) 0%, hsl(165deg, 15%, 58%) 100%);
+  background-color: #fefefe;
 }
 
 * {
   padding: 0;
   margin: 0;
+  color: #212121;
   box-sizing: border-box;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -26,7 +26,7 @@ body {
   gap: 20px;
 }
 .page-container .product-list h2 {
-  color: #5e746e;
+  color: #212121;
   font-size: 30px;
 }
 .page-container .product-list .product-container {
@@ -46,15 +46,15 @@ body {
 }
 .page-container .product-list .product-container .product-info h3 {
   padding: 10px;
-  background-color: #84a59d;
-  color: white;
-  border: 1px solid rgb(160, 159, 159);
+  background-color: #212121;
+  color: #fefefe;
+  border: 1px solid rgb(182, 179, 179);
   width: 30%;
   text-align: center;
 }
 .page-container .product-list .product-container .display-product {
-  border: 1px solid rgb(160, 159, 159);
-  background-color: #cf787f;
+  border: 1px solid rgb(182, 179, 179);
+  background-color: #dc3545;
   padding: 10px;
   color: white;
 }
@@ -64,14 +64,13 @@ body {
 }
 .page-container .product-list .product-container .items p {
   padding: 10px;
-  border: 1px solid rgb(160, 159, 159);
+  border: 1px solid rgb(182, 179, 179);
   width: 30%;
-  color: #588157;
+  color: #28a745;
 }
 .page-container .product-list .product-container .items button {
   padding: 10px;
-  background-color: #e63946;
-  color: white;
+  background-color: #dc3545;
   font-size: 20px;
   border: none;
   cursor: pointer;
@@ -80,18 +79,21 @@ body {
 .page-container .product-list .product-container .items button:hover {
   opacity: 0.7;
 }
+.page-container .product-list .product-container .items button i {
+  color: white;
+}
 .page-container .product-list .product-container form {
   display: flex;
 }
 .page-container .product-list .product-container form input {
   border: none;
-  border: 1px solid rgb(160, 159, 159);
+  border: 1px solid rgb(182, 179, 179);
   width: 30%;
   padding: 10px;
 }
 .page-container .product-list .product-container form button {
   padding: 10px;
-  background-color: #588157;
+  background-color: #28a745;
   color: white;
   font-size: 20px;
   border: none;
@@ -102,11 +104,10 @@ body {
   opacity: 0.7;
 }
 .page-container .product-list .product-container .total-price {
-  border: 1px solid rgb(160, 159, 159);
+  border: 1px solid rgb(182, 179, 179);
   padding: 10px;
 }
 .page-container .product-list .product-container .total-price p {
-  color: #5e746e;
   font-size: 25px;
 }
 .page-container .product-list .product-container .total-price p span {
