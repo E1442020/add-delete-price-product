@@ -1,0 +1,142 @@
+$border: 1px solid rgb(160, 159, 159);
+
+@mixin breakpoints($point) {
+    @if $point==mobile {
+        @media (max-width: 940px) {
+            @content;
+        }
+    }
+}
+
+body {
+    background-color: hsla(8, 71%, 86%, 1);
+
+    background-image: linear-gradient(90deg,
+            hsla(8, 71%, 86%, 1) 0%,
+            hsla(165, 15%, 58%, 1) 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.page-container {
+    width: 50%;
+    margin: 90px auto;
+    text-align: center;
+
+    @include breakpoints(mobile) {
+        width: 100%;
+    }
+
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+            color: #5e746e;
+            font-size: 30px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 80%;
+            margin: 0 auto;
+
+            @include breakpoints(mobile) {
+                width: 90%;
+            }
+
+            .product-info {
+                display: flex;
+
+                h3 {
+                    padding: 10px;
+                    background-color: #84a59d;
+                    color: white;
+                    border: $border;
+                    width: 30%;
+                    text-align: center;
+                }
+            }
+
+            .display-product {
+                border: $border;
+                background-color: #cf787f;
+                padding: 10px;
+                color: white;
+            }
+
+            .items {
+                display: flex;
+                margin-bottom: 5px;
+
+                p {
+                    padding: 10px;
+                    border: $border;
+                    width: 30%;
+                    color: #588157;
+                }
+
+                button {
+                    padding: 10px;
+                    background-color: #e63946;
+                    color: white;
+                    font-size: 20px;
+                    border: none;
+                    cursor: pointer;
+                    width: 30%;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            form {
+                display: flex;
+
+                input {
+                    border: none;
+                    border: $border;
+                    width: 30%;
+                    padding: 10px;
+                }
+
+                button {
+                    padding: 10px;
+                    background-color: #588157;
+                    color: white;
+                    font-size: 20px;
+                    border: none;
+                    cursor: pointer;
+                    width: 30%;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .total-price {
+                border: $border;
+                padding: 10px;
+
+                p {
+                    color: #5e746e;
+                    font-size: 25px;
+
+                    span {
+                        color: #e63946;
+                    }
+                }
+            }
+        }
+    }
+}
