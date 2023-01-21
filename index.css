@@ -52,6 +52,11 @@ body {
   width: 30%;
   text-align: center;
 }
+@media (max-width: 940px) {
+  .page-container .product-list .product-container .product-info h3 {
+    font-size: 12px;
+  }
+}
 .page-container .product-list .product-container .display-product {
   border: 1px solid rgb(182, 179, 179);
   background-color: #dc3545;
@@ -66,12 +71,15 @@ body {
   padding: 10px;
   border: 1px solid rgb(182, 179, 179);
   width: 30%;
-  color: #28a745;
+  word-break: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .page-container .product-list .product-container .items button {
   padding: 10px;
   background-color: #dc3545;
-  font-size: 20px;
+  font-size: 15px;
   border: none;
   cursor: pointer;
   width: 30%;
@@ -95,7 +103,7 @@ body {
   padding: 10px;
   background-color: #28a745;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   border: none;
   cursor: pointer;
   width: 30%;
